@@ -23,11 +23,15 @@ console.log(student);
 // "John smith is a student in class 12"
 // ```
 
-student.JohnSmith = function () {
+student.JohnSmithhh = function () {
     return "John smith is a student of class 12";
 };
 
-console.log(student.JohnSmith());
+console.log(student.JohnSmithhh());
+
+
+console.log("===========================================");
+
 
 // 3. Create a person object.Include the person's first and last name, age, job, city etc. Create a method to print data from the object e.g. "John Smith is a 41 year old engineer living in France".
 const person = {
@@ -37,36 +41,43 @@ const person = {
     maritalStatus: "married",
     job: "engineer",
     country: "France",
-    placeOfBirth: "Hamburg,Germany"
+    placeOfBirth: "Hamburg,Germany",
+
+
+
+    // this is the firs method.
+    // print: function () {
+    //     console.log(`${this.firstName} is  ${this.age} year old ${this.job} living in ${this.country}`);
+    // }
 
 };
-function info() {
-    console.log(`${this.firstName}is a ${this.age} year old ${this.job} living in ${this.country}`);
+// person.print()
+
+
+//This is the second method======
+
+function information() {
+    console.log(`${this.firstName} is  ${this.age} year old ${this.job} living in ${this.country}`);
 }
-person.info = info;
+person.info = information;
 person.info();
 
 
 
+//method three ========================================
+// console.log(`${person.firstName} ${person.lastName} is a ${person.age} years old ${person.job} living in ${person.country} in ${person.placeOfBirth}`)
+
+
+
+
+
+
+console.log("===========================================");
 // ## Bonus
 
 // 3. Write a method to get the length of the person object.
-// function personLength() {
-//     eg = 0;
-//     for (i in person) {
-//         eg++;
-//     }
-//     return eg;
-// }
-// let printLength = personLength.bind(person);
-// console.log(personLength);
-
-// person.profileText();
-// let counter = 0
-// for (const prop in person) {
-//     counter++
-// }
-// console.log(counter);
 
 const getObjectLength = Object.keys(person).length;
 console.log(getObjectLength);
+//=============================================================
+console.log("===========================================");
